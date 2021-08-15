@@ -20,6 +20,7 @@ int main(int argc,char** argv)
 
 	//TinyLog::setSingleMaxSize(1024000);
 	TinyLog::setStorageLevel(TinyLog::DEBUG);
+	//TinyLog::setLogMode(TinyLog::SINGLE_THREAD);
 
 	for (int i = 0;i < 20;i++) {
 		std::thread* thread = new std::thread([=]() {
